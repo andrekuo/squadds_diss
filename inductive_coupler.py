@@ -21,7 +21,7 @@ class InductiveCoupler(QComponent):
             |                 |
             +                 +
     """
-    default_settings = dict(prime_width='10um',
+    default_options = dict(prime_width='10um',
                             prime_gap='6um',
                             second_width='10um',
                             second_gap='6um',
