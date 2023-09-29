@@ -8,38 +8,40 @@ class CavityFeedline(QComponent):
     default_options = dict(
         coupling_type = 'capacitive',
         coupler_options = dict(
-                           prime_width='10um',
-                           prime_gap='6um',
-                           second_width='10um',
-                           second_gap='6um',
-                           coupling_space='3um',
-                           coupling_length='100um',
-                           down_length='100um',
-                           fillet='25um',
-                           mirror=False,
-                           open_termination=True,
+                        #    prime_width='10um',
+                        #    prime_gap='6um',
+                        #    second_width='10um',
+                        #    second_gap='6um',
+                        #    coupling_space='3um',
+                        #    coupling_length='100um',
+                        #    down_length='100um',
+                        #    fillet='25um',
+                        #    mirror=False,
+                        #    open_termination=True,
                         ),
         cpw_options = dict(
-                            total_length='3000um',
-                            pin_inputs = dict(
-                                start_pin = dict(
-                                    component = None,
-                                    pin = None
-                                ),
-                                end_pin = dict(
-                                    component = None,
-                                    pin = None
-                                ),
-                            ),
+                            total_length='6000um',
+                            # pin_inputs = dict(
+                            #     start_pin = dict(
+                            #         component = None,
+                            #         pin = None
+                            #     ),
+                            #     end_pin = dict(
+                            #         component = None,
+                            #         pin = None
+                            #     ),
+                            # ),
                             left_options = dict(
-                                meander=dict(spacing='200um', asymmetry='0um'),
-                                snap='true',
-                                prevent_short_edges='true'
+                                meander=dict(spacing='100um', asymmetry='0um'),
+                                # snap='true',
+                                # prevent_short_edges='true',
+                                fillet = '49.9um',
                             ),
                             right_options = dict(
-                                meander=dict(spacing='200um', asymmetry='0um'),
-                                snap='true',
-                                prevent_short_edges='true'
+                                meander=dict(spacing='100um', asymmetry='0um'),
+                                # snap='true',
+                                # prevent_short_edges='true',
+                                fillet = '49.9um',
                             )
                         ),
         mirror=False
@@ -81,6 +83,8 @@ class CavityFeedline(QComponent):
         elif(p.coupling_type == 'inductive'):
             from inductive_coupler import InductiveCoupler
             self.coupler = InductiveCoupler(self.design, "{}_ind_coupler".format(self.name), options=temp_opts)
+        # self.add_qgeometry('path', self.coupler.qgeometry_dict('path'))
+        # self.add_qgeometry('poly', self.coupler.qgeometry_dict('poly'))
 
     def make_cpws(self):
         from qiskit_metal.qlibrary.tlines.meandered import RouteMeander
@@ -108,6 +112,8 @@ class CavityFeedline(QComponent):
         self.copier(left_opts, p.cpw_options.left_options)
 
         LeftMeander = RouteMeander(self.design, "{}_left_cpw".format(self.name), options = left_opts)
+        # self.add_qgeometry('path', LeftMeander.qgeometry_dict('path'))
+        # self.add_qgeometry('poly', LeftMeander.qgeometry_dict('poly'))
 
         if(p.coupling_type == 'inductive'):
             right_opts = dict()
@@ -131,6 +137,8 @@ class CavityFeedline(QComponent):
             self.copier(right_opts, p.cpw_options.right_options)
 
             RightMeander = RouteMeander(self.design, "{}_right_cpw".format(self.name), options = right_opts)
+            # self.add_qgeometry('path', RightMeander.qgeometry_dict('path'))
+            # self.add_qgeometry('poly', RightMeander.qgeometry_dict('poly'))
 
         
     def make_pins(self):

@@ -1,0 +1,1770 @@
+pos_x,pos_y,orientation,chip,layer,cavity_options.coupling_type,cavity_options.coupler_options.orientation,cavity_options.coupler_options.coupling_length,cavity_options.coupler_options.prime_width,cavity_options.coupler_options.prime_gap,cavity_options.coupler_options.second_width,cavity_options.coupler_options.second_gap,cavity_options.coupler_options.coupling_space,cavity_options.coupler_options.open_termination,cavity_options.coupler_options.down_length,cavity_options.cpw_options.total_length,cavity_options.cpw_options.left_options.fillet,cavity_options.cpw_options.right_options.meander.spacing,cavity_options.cpw_options.right_options.meander.asymmetry,cavity_options.cpw_options.right_options.fillet,cavity_options.cpw_options.pin_inputs.start_pin.component,cavity_options.cpw_options.pin_inputs.start_pin.pin,cavity_options.cpw_options.pin_inputs.end_pin.component,cavity_options.cpw_options.pin_inputs.end_pin.pin,cavity_options.cpw_options.lead.end_straight,cavity_options.cpw_options.fillet,cavity_options.cpw_options.trace_width,cavity_options.cpw_options.meander.spacing,cavity_options.cpw_options.meander.asymmetry,cavity_options.cpw_options.trace_gap,qubit_options.connection_pads.readout.connector_location,qubit_options.connection_pads.readout.connector_type,qubit_options.connection_pads.readout.claw_length,qubit_options.connection_pads.readout.ground_spacing,qubit_options.connection_pads.readout.claw_gap,qubit_options.connection_pads.readout.claw_width,qubit_options.connection_pads.readout.claw_cpw_length,qubit_options.connection_pads.readout.claw_cpw_width,qubit_options.claw_cpw_length,qubit_options.orientation,qubit_options.pos_y,qubit_options.cross_width,qubit_options.cross_length,qubit_options.cross_gap,qubit_options.aedt_hfss_inductance,,qubit_freq_MHz,qubit_anharmonicity_MHz,cavity_freq_MHz,coupling_strength_MHz,feedline_coupling,cavity_wavelength,other_data
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7um,False,50um,3900um,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,4909.993887055155,204.2193787948284,7415.715386912768,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                j0
+Cj_variable                  Cj_0
+Lj_variable                  Lj_0
+length                     0.0001
+line             JJ_Lj_8_rect_jj_
+rect         JJ_rect_Lj_8_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.960707
+1  0.007866, 'Pm_cap':          j0
+0  0.019150
+1  0.000331, 'Sm':    s_j0
+0     1
+1    -1, 'Om':                  0         1
+freq_GHz  5.105335  7.417815, 'sols':             U_H           U_E
+0  1.093377e-27  5.411177e-26
+1  6.278141e-26  6.327942e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    5.105335
+1    7.417815
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    2.339202e-09
+dtype: float64
+1    0   -2.267359e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0    7.268025e-07
+dtype: float64
+1    0   -1.023577e-07
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 2.6500252257214403e-26}, 'U_J_caps': {'j0': 5.282418021218513e-28}, 'U_H': 5.4668857658968e-28, 'U_E': 2.705588652060015e-26, 'U_tot_ind': 2.704694083380408e-26, 'U_tot_cap': 2.7584128322722e-26, 'U_norm': 2.7584128322722e-26, 'U_diff': 0.00983300340285849}, 1: {'U_J_inds': {'j0': 2.489746502596933e-28}, 'U_J_caps': {'j0': 1.0477106552937071e-29}, 'U_H': 3.1390706522109e-26, 'U_E': 3.16397099601001e-26, 'U_tot_ind': 3.1639681172368695e-26, 'U_tot_cap': 3.165018706665304e-26, 'U_norm': 3.165018706665304e-26, 'U_diff': 0.0001659964632042819}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        37439   
+1                       layer_3_datatype_0_plane       565760   
+2                                     vacuum_box       349823   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          143   
+4  second_cpw_qubit_cavity_cap_coupler_shortline          764   
+5          trace_qubit_cavity_left_cpw_shortline        14617   
+6                        cross_qubit_cavity_xmon         3414   
+7        readout_connector_arm_qubit_cavity_xmon         2149   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.001161           0.202306           0.027215   3.865660e-11   
+1           0.000276           0.839981           0.021225   1.757520e-12   
+2           0.000331           1.117630           0.030862   1.063270e-12   
+3           0.004854           0.071407           0.026430   6.149990e-09   
+4           0.003202           0.011064           0.006628   1.158510e-09   
+5           0.002331           0.013150           0.006228   2.493370e-10   
+6           0.000957           0.030993           0.010295   3.004590e-11   
+7           0.000655           0.013443           0.006424   9.758440e-12   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   9.772380e-06    1.349090e-07      6.587730e-07  
+1   2.155940e-02    3.578460e-06      1.157480e-04  
+2   4.583360e-02    1.271730e-05      4.216210e-04  
+3   2.380230e-07    5.594410e-08      4.684510e-08  
+4   2.281870e-08    6.237390e-09      3.352530e-09  
+5   3.501550e-08    5.162350e-09      4.136060e-09  
+6   2.007920e-07    1.247800e-08      1.786950e-08  
+7   4.411860e-08    4.990230e-09      5.449750e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       8225                NaN
+2                      10586          10.225000
+3                      13578           5.204700
+4                      17381           2.819700
+5                      22239           1.942500
+6                      28473           1.009500
+7                      36442           0.770960
+8                      46640           0.516390
+9                      59643           0.590080
+10                     76274           0.305720
+11                     97549           0.607730
+12                    124896           0.470060
+13                    159858           0.416560
+14                    204833           0.371680
+15                    262748           0.209460
+16                    337176           0.145990
+17                    432957           0.187400
+18                    555668           0.124590
+19                    713272           0.099914
+20                    915583           0.090854, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7um,False,50um,8150um,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,3910.807865975416,0.1395266505537033,4965.137384219887,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_11_rect_jj_
+rect         JJ_rect_Lj_11_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.022484
+1  0.945052, 'Pm_cap':          j0
+0  0.000264
+1  0.019233, 'Sm':    s_j0
+0    -1
+1    -1, 'Om':                 0         1
+freq_GHz  3.91488  5.158538, 'sols':             U_H           U_E
+0  5.824368e-26  5.958415e-26
+1  2.737762e-28  7.586224e-27, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    3.914880
+1    5.158538
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0   -3.719510e-10
+dtype: float64
+1    0   -8.687316e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0   -8.861935e-08
+dtype: float64
+1    0   -2.727323e-07
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 6.700173066776406e-28}, 'U_J_caps': {'j0': 7.85338953290668e-30}, 'U_H': 2.912183850994775e-26, 'U_E': 2.979207737467885e-26, 'U_tot_ind': 2.979185581662539e-26, 'U_tot_cap': 2.9799930764211755e-26, 'U_norm': 2.9799930764211755e-26, 'U_diff': 0.00013550437148603195}, 1: {'U_J_inds': {'j0': 3.654985626548237e-27}, 'U_J_caps': {'j0': 7.438289226380626e-29}, 'U_H': 1.368881023787375e-28, 'U_E': 3.793112079004315e-27, 'U_tot_ind': 3.791873728926974e-27, 'U_tot_cap': 3.867494971268121e-27, 'U_norm': 3.867494971268121e-27, 'U_diff': 0.009873038536351028}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        70458   
+1                       layer_3_datatype_0_plane      1186736   
+2                                     vacuum_box       799992   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          112   
+4  second_cpw_qubit_cavity_cap_coupler_shortline          778   
+5          trace_qubit_cavity_left_cpw_shortline        29927   
+6                        cross_qubit_cavity_xmon        10817   
+7        readout_connector_arm_qubit_cavity_xmon         2049   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000619           0.222067           0.023769   7.983400e-12   
+1           0.000123           0.865653           0.018673   9.373750e-14   
+2           0.000133           1.107000           0.024952   5.003010e-14   
+3           0.010568           0.062675           0.030452   1.870110e-08   
+4           0.002805           0.011124           0.006526   7.473400e-10   
+5           0.002269           0.014811           0.006376   2.085980e-10   
+6           0.000307           0.021141           0.005700   1.062480e-12   
+7           0.000659           0.016615           0.006575   1.079260e-11   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.259600e-05    1.011100e-07      5.276130e-07  
+1   2.990660e-02    2.420350e-06      9.350510e-05  
+2   5.490430e-02    7.889750e-06      3.259130e-04  
+3   2.089170e-07    7.142860e-08      5.111960e-08  
+4   2.100890e-08    6.125150e-09      3.194670e-09  
+5   4.693650e-08    5.429220e-09      4.531230e-09  
+6   9.143280e-08    3.938250e-09      5.632430e-09  
+7   5.087800e-08    5.233770e-09      6.355720e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       8880                NaN
+2                      11379          14.225000
+3                      14515           7.025300
+4                      18522           5.722300
+5                      23606           2.553600
+6                      30178           1.274900
+7                      38491           1.139900
+8                      49157           0.698320
+9                      62719           0.452500
+10                     80280           0.526910
+11                    102880           0.427400
+12                    131594           0.248480
+13                    168178           0.177660
+14                    215256           0.250540
+15                    268709           0.227410
+16                    344325           0.163040
+17                    441431           0.141420
+18                    566983           0.146710
+19                    727999           0.125520
+20                    934617           0.104440
+21                   1201714           0.100730
+22                   1544627           0.078600
+23                   1986728           0.056512, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7um,False,50um,8025um,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,3959.0317237281874,0.18618798196792602,4964.036519257572,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_14_rect_jj_
+rect         JJ_rect_Lj_14_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.025228
+1  0.942511, 'Pm_cap':          j0
+0  0.000303
+1  0.019167, 'Sm':    s_j0
+0     1
+1     1, 'Om':                  0         1
+freq_GHz  3.963687  5.156577, 'sols':             U_H           U_E
+0  1.846664e-25  1.894488e-25
+1  8.638267e-28  2.229443e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    3.963687
+1    5.156577
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    7.025515e-10
+dtype: float64
+1    0    1.487207e-09
+dtype: float64
+dtype: object, 'V_peak': 0    0    1.694735e-07
+dtype: float64
+1    0    4.667210e-07
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 2.39040126796763e-27}, 'U_J_caps': {'j0': 2.8721269631405585e-29}, 'U_H': 9.2333221510857e-26, 'U_E': 9.4724406104502e-26, 'U_tot_ind': 9.472362277882463e-26, 'U_tot_cap': 9.47531273741334e-26, 'U_norm': 9.47531273741334e-26, 'U_diff': 0.00015571617776301494}, 1: {'U_J_inds': {'j0': 1.0711676565284229e-26}, 'U_J_caps': {'j0': 2.1782850494546645e-28}, 'U_H': 4.31913367099525e-28, 'U_E': 1.1147216451453e-26, 'U_tot_ind': 1.1143589932383754e-26, 'U_tot_cap': 1.1365044956398466e-26, 'U_norm': 1.1365044956398466e-26, 'U_diff': 0.009838669697604847}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        46837   
+1                       layer_3_datatype_0_plane       651870   
+2                                     vacuum_box       429074   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline           78   
+4  second_cpw_qubit_cavity_cap_coupler_shortline          353   
+5          trace_qubit_cavity_left_cpw_shortline        14049   
+6                        cross_qubit_cavity_xmon         5698   
+7        readout_connector_arm_qubit_cavity_xmon         1141   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000791           0.237995           0.028743   1.982750e-11   
+1           0.000244           0.907670           0.024053   5.086410e-13   
+2           0.000224           1.146850           0.032271   2.102980e-13   
+3           0.011742           0.100636           0.047348   2.953950e-08   
+4           0.004997           0.012643           0.009632   1.417350e-09   
+5           0.002886           0.020355           0.008997   8.269980e-10   
+6           0.000519           0.026672           0.007768   5.435920e-12   
+7           0.000954           0.016277           0.008176   3.196530e-11   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.325270e-05    1.502490e-07      6.654410e-07  
+1   2.811170e-02    4.353200e-06      1.411070e-04  
+2   9.295740e-02    1.453300e-05      5.206470e-04  
+3   3.354520e-07    1.025640e-07      8.410120e-08  
+4   3.174970e-08    1.349960e-08      5.321070e-09  
+5   6.785020e-08    1.138730e-08      7.605910e-09  
+6   1.389090e-07    7.476310e-09      1.025530e-08  
+7   5.126710e-08    9.398770e-09      9.516730e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       9194                NaN
+2                      11831          17.811000
+3                      15077           6.399700
+4                      19230           2.968900
+5                      24598           1.766200
+6                      31429           1.259200
+7                      40210           1.383100
+8                      51449           0.859490
+9                      65844           0.561910
+10                     84220           0.355580
+11                    107778           0.313460
+12                    137984           0.327090
+13                    176435           0.201560
+14                    225934           0.239450
+15                    289299           0.220870
+16                    363214           0.150190
+17                    428663           0.100490
+18                    509622           0.130920
+19                    654201           0.126760
+20                    840529           0.098514
+21                   1080944           0.099225, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7um,False,50um,3700um,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,4913.163994086577,204.89287124365424,7749.556340135871,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_17_rect_jj_
+rect         JJ_rect_Lj_17_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.962116
+1  0.006414, 'Pm_cap':          j0
+0  0.019206
+1  0.000295, 'Sm':    s_j0
+0     1
+1     1, 'Om':                  0         1
+freq_GHz  5.108998  7.751364, 'sols':             U_H           U_E
+0  5.928262e-28  3.168184e-26
+1  6.103372e-26  6.142795e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    5.108998
+1    7.751364
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    1.791257e-09
+dtype: float64
+1    0    2.017104e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0    5.569522e-07
+dtype: float64
+1    0    9.515481e-08
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 1.553925107815206e-26}, 'U_J_caps': {'j0': 3.101957177679607e-28}, 'U_H': 2.96413084473119e-28, 'U_E': 1.58409188589353e-26, 'U_tot_ind': 1.583566416262518e-26, 'U_tot_cap': 1.615111457670326e-26, 'U_norm': 1.615111457670326e-26, 'U_diff': 0.009861900025907528}, 1: {'U_J_inds': {'j0': 1.9704750785367924e-28}, 'U_J_caps': {'j0': 9.054437128833331e-30}, 'U_H': 3.0516857961158e-26, 'U_E': 3.0713976164513e-26, 'U_tot_ind': 3.0713905469011677e-26, 'U_tot_cap': 3.0723030601641834e-26, 'U_norm': 3.0723030601641834e-26, 'U_diff': 0.00014852844581414776}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        41465   
+1                       layer_3_datatype_0_plane       656731   
+2                                     vacuum_box       413250   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          132   
+4  second_cpw_qubit_cavity_cap_coupler_shortline         1046   
+5          trace_qubit_cavity_left_cpw_shortline        18217   
+6                        cross_qubit_cavity_xmon         4225   
+7        readout_connector_arm_qubit_cavity_xmon         2817   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.001164           0.214727           0.025641   4.106290e-11   
+1           0.000239           0.668644           0.019449   6.323790e-13   
+2           0.000275           1.324980           0.027924   7.244400e-13   
+3           0.006014           0.089337           0.029295   8.195270e-09   
+4           0.002710           0.007988           0.005390   7.127920e-10   
+5           0.002235           0.012082           0.005481   1.898670e-10   
+6           0.001114           0.031289           0.009044   2.690570e-11   
+7           0.000864           0.012686           0.005575   2.601350e-11   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.139580e-05    1.199780e-07      6.174040e-07  
+1   1.993960e-02    3.034610e-06      9.851900e-05  
+2   6.369370e-02    1.059730e-05      4.008610e-04  
+3   2.977910e-07    6.060610e-08      5.404070e-08  
+4   1.335030e-08    4.555800e-09      2.192130e-09  
+5   2.863750e-08    3.933060e-09      3.213870e-09  
+6   1.567460e-07    1.008280e-08      1.403670e-08  
+7   3.387510e-08    3.806890e-09      4.149340e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       7542                NaN
+2                       9650          10.313000
+3                      12344           8.637400
+4                      15824           2.701200
+5                      20268           1.966600
+6                      25960           1.254800
+7                      33209           0.633860
+8                      42468           0.567060
+9                      54394           0.561810
+10                     69571           0.531470
+11                     89000           0.431200
+12                    113836           0.596490
+13                    145745           0.331090
+14                    186686           0.422210
+15                    239346           0.305090
+16                    307222           0.231510
+17                    394480           0.199370
+18                    506460           0.114600
+19                    649940           0.117900
+20                    833841           0.096301
+21                   1069981           0.071549, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7um,False,50um,3550um,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,4916.667186347575,205.4473132408676,8023.840613055041,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_20_rect_jj_
+rect         JJ_rect_Lj_20_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.962932
+1  0.005562, 'Pm_cap':          j0
+0  0.019252
+1  0.000274, 'Sm':    s_j0
+0     1
+1     1, 'Om':                  0         1
+freq_GHz  5.112932  8.025476, 'sols':             U_H           U_E
+0  4.927248e-28  2.762870e-26
+1  2.828863e-26  2.844693e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    5.112932
+1    8.025476
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    1.673505e-09
+dtype: float64
+1    0    1.278278e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0    5.207406e-07
+dtype: float64
+1    0    6.243391e-08
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 1.356339928859355e-26}, 'U_J_caps': {'j0': 2.7117074805997124e-28}, 'U_H': 2.463623829571925e-28, 'U_E': 1.38143515433019e-26, 'U_tot_ind': 1.380976167155074e-26, 'U_tot_cap': 1.408552229136187e-26, 'U_norm': 1.408552229136187e-26, 'U_diff': 0.009885564175570278}, 1: {'U_J_inds': {'j0': 7.913437706894532e-29}, 'U_J_caps': {'j0': 3.8979925628415076e-30}, 'U_H': 1.41443135243095e-26, 'U_E': 1.422346499873875e-26, 'U_tot_ind': 1.4223447901378447e-26, 'U_tot_cap': 1.422736299130159e-26, 'U_norm': 1.422736299130159e-26, 'U_diff': 0.00013760908038482652}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        53292   
+1                       layer_3_datatype_0_plane       944639   
+2                                     vacuum_box       589067   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          197   
+4  second_cpw_qubit_cavity_cap_coupler_shortline         1979   
+5          trace_qubit_cavity_left_cpw_shortline        30253   
+6                        cross_qubit_cavity_xmon         6146   
+7        readout_connector_arm_qubit_cavity_xmon         4180   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000448           0.223592           0.022786   3.674160e-12   
+1           0.000153           0.698239           0.016776   1.872300e-13   
+2           0.000207           1.107000           0.023533   3.801700e-13   
+3           0.004654           0.047514           0.019531   4.111400e-09   
+4           0.001700           0.007459           0.003928   3.153860e-10   
+5           0.001405           0.010946           0.004192   8.947400e-11   
+6           0.000643           0.019514           0.007251   1.006540e-11   
+7           0.000405           0.012899           0.004665   2.750560e-12   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.265700e-05    9.228260e-08      5.412460e-07  
+1   1.413950e-02    2.084610e-06      7.364820e-05  
+2   4.507090e-02    7.345830e-06      2.825730e-04  
+3   1.583810e-07    4.060910e-08      3.066880e-08  
+4   6.856570e-09    2.407970e-09      1.187610e-09  
+5   2.289230e-08    2.273870e-09      1.857640e-09  
+6   8.707590e-08    6.931340e-09      8.602840e-09  
+7   3.333330e-08    2.565550e-09      2.859180e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       8371                NaN
+2                      10764          13.678000
+3                      13791           5.793800
+4                      17650           2.379400
+5                      22611           0.966750
+6                      28984           0.876230
+7                      37100           0.777780
+8                      47501           0.584740
+9                      60796           0.716910
+10                     77781           0.691770
+11                     99399           0.375490
+12                    127272           0.645580
+13                    163064           0.466070
+14                    208908           0.288870
+15                    267869           0.158930
+16                    343554           0.220270
+17                    440802           0.195540
+18                    565727           0.173110
+19                    725947           0.157700
+20                    931194           0.114430
+21                   1194783           0.086222
+22                   1533706           0.071446, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7um,False,50um,8000um,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,3971.3566270970286,0.19856398120498656,4965.98482758066,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_23_rect_jj_
+rect         JJ_rect_Lj_23_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.025865
+1  0.941896, 'Pm_cap':          j0
+0  0.000313
+1  0.019168, 'Sm':    s_j0
+0     1
+1     1, 'Om':                  0         1
+freq_GHz  3.976154  5.158504, 'sols':             U_H           U_E
+0  1.163138e-25  1.194041e-25
+1  6.436403e-28  1.634774e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    3.976154
+1    5.158504
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    5.647575e-10
+dtype: float64
+1    0    1.273095e-09
+dtype: float64
+dtype: object, 'V_peak': 0    0    1.366625e-07
+dtype: float64
+1    0    3.996768e-07
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 1.5446796235375096e-27}, 'U_J_caps': {'j0': 1.867664833928131e-29}, 'U_H': 5.8156882070986e-26, 'U_E': 5.97020602040775e-26, 'U_tot_ind': 5.97015616945235e-26, 'U_tot_cap': 5.972073685241678e-26, 'U_norm': 5.972073685241678e-26, 'U_diff': 0.00016056597575654882}, 1: {'U_J_inds': {'j0': 7.849393974511581e-27}, 'U_J_caps': {'j0': 1.597415218398832e-28}, 'U_H': 3.218201388102805e-28, 'U_E': 8.1738711934419e-27, 'U_tot_ind': 8.171214113321861e-27, 'U_tot_cap': 8.333612715281782e-27, 'U_norm': 8.333612715281782e-27, 'U_diff': 0.00983946112530405}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        50386   
+1                       layer_3_datatype_0_plane       735718   
+2                                     vacuum_box       493662   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline           92   
+4  second_cpw_qubit_cavity_cap_coupler_shortline          430   
+5          trace_qubit_cavity_left_cpw_shortline        16163   
+6                        cross_qubit_cavity_xmon         6761   
+7        readout_connector_arm_qubit_cavity_xmon         1305   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000657           0.269610           0.028091   1.343630e-11   
+1           0.000184           0.805862           0.022618   3.072680e-13   
+2           0.000184           1.146040           0.031012   2.644680e-13   
+3           0.011845           0.054864           0.032908   1.703350e-08   
+4           0.004385           0.011856           0.008683   2.639980e-09   
+5           0.002586           0.017519           0.008413   5.871640e-10   
+6           0.000500           0.030398           0.007274   3.920630e-12   
+7           0.001090           0.018661           0.007888   3.311300e-11   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.698600e-05    1.393220e-07      6.639570e-07  
+1   2.902530e-02    3.847670e-06      1.281220e-04  
+2   1.189480e-01    1.260080e-05      4.789950e-04  
+3   1.833630e-07    8.695650e-08      5.032500e-08  
+4   3.172920e-08    1.108220e-08      5.014410e-09  
+5   5.727500e-08    9.866990e-09      6.931010e-09  
+6   1.541420e-07    6.300840e-09      9.038450e-09  
+7   5.764240e-08    8.217620e-09      8.702690e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       9100                NaN
+2                      11654          23.735000
+3                      14918           4.605700
+4                      19040           3.345200
+5                      24360           2.272400
+6                      31126           1.862500
+7                      39740           1.467600
+8                      50759           0.967700
+9                      64902           0.413570
+10                     83069           0.362940
+11                    106349           0.436450
+12                    136039           0.363380
+13                    174000           0.245470
+14                    222736           0.301020
+15                    274333           0.201810
+16                    351753           0.157400
+17                    450968           0.122000
+18                    579364           0.137320
+19                    744215           0.124660
+20                    956292           0.096080
+21                   1229380           0.099603, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7um,False,50um,3.58mm,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,4914.454829077586,205.20382063935088,7963.558461294121,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_26_rect_jj_
+rect         JJ_rect_Lj_26_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.962796
+1  0.005725, 'Pm_cap':          j0
+0  0.019231
+1  0.000278, 'Sm':    s_j0
+0     1
+1    -1, 'Om':                  0         1
+freq_GHz  5.110511  7.965226, 'sols':             U_H           U_E
+0  4.949469e-28  2.750765e-26
+1  4.998356e-26  5.027130e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    5.110511
+1    7.965226
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    1.669699e-09
+dtype: float64
+1    0   -1.724058e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0    5.193103e-07
+dtype: float64
+1    0   -8.357460e-08
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 1.3501781572236863e-26}, 'U_J_caps': {'j0': 2.6968317018492813e-28}, 'U_H': 2.4747345619219e-28, 'U_E': 1.375382613123465e-26, 'U_tot_ind': 1.3749255028429053e-26, 'U_tot_cap': 1.402350930141958e-26, 'U_norm': 1.402350930141958e-26, 'U_diff': 0.009874936096864252}, 1: {'U_J_inds': {'j0': 1.4395214188871677e-28}, 'U_J_caps': {'j0': 6.984713285793322e-30}, 'U_H': 2.49917807822837e-26, 'U_E': 2.51356511159693e-26, 'U_tot_ind': 2.5135732924172418e-26, 'U_tot_cap': 2.5142635829255095e-26, 'U_norm': 2.5142635829255095e-26, 'U_diff': 0.0001372937359310585}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        41848   
+1                       layer_3_datatype_0_plane       678654   
+2                                     vacuum_box       421886   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          145   
+4  second_cpw_qubit_cavity_cap_coupler_shortline         1194   
+5          trace_qubit_cavity_left_cpw_shortline        18773   
+6                        cross_qubit_cavity_xmon         4514   
+7        readout_connector_arm_qubit_cavity_xmon         2880   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000628           0.221673           0.025589   8.486000e-12   
+1           0.000231           0.792797           0.019461   6.034260e-13   
+2           0.000252           1.234220           0.028191   5.504020e-13   
+3           0.006489           0.057166           0.025199   6.112740e-09   
+4           0.002593           0.010556           0.005221   5.371450e-10   
+5           0.002259           0.011769           0.005350   2.125390e-10   
+6           0.000701           0.031106           0.008974   1.311660e-11   
+7           0.000697           0.014145           0.005623   1.333310e-11   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.092330e-05    1.177910e-07      6.162800e-07  
+1   1.898750e-02    2.908620e-06      9.569010e-05  
+2   4.119760e-02    1.028150e-05      3.615250e-04  
+3   1.905540e-07    5.517240e-08      4.439070e-08  
+4   1.634490e-08    3.991090e-09      2.096080e-09  
+5   2.863750e-08    3.694820e-09      3.067810e-09  
+6   1.585870e-07    9.437310e-09      1.321720e-08  
+7   4.112890e-08    3.723610e-09      4.300780e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       7687                NaN
+2                       9879           9.999700
+3                      12658           4.538200
+4                      16213           3.295100
+5                      20770           1.492900
+6                      26605           1.493200
+7                      34063           0.908780
+8                      43621           0.681830
+9                      55903           0.816250
+10                     71551           0.617080
+11                     91535           0.541370
+12                    117103           0.400090
+13                    149991           0.347790
+14                    192214           0.314470
+15                    246356           0.309920
+16                    316030           0.182710
+17                    405555           0.132100
+18                    520512           0.110580
+19                    667994           0.102040
+20                    857394           0.099936
+21                   1100540           0.076018, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7um,False,50um,3.5mm,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,4917.453933456383,205.58791251779175,8116.853782477854,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_29_rect_jj_
+rect         JJ_rect_Lj_29_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.963167
+1  0.005320, 'Pm_cap':          j0
+0  0.019263
+1  0.000268, 'Sm':    s_j0
+0     1
+1    -1, 'Om':                  0        1
+freq_GHz  5.113825  8.11844, 'sols':             U_H           U_E
+0  5.280923e-28  3.003534e-26
+1  2.974763e-26  2.990684e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    5.113825
+1    8.118440
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    1.745093e-09
+dtype: float64
+1    0   -1.281832e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0    5.431114e-07
+dtype: float64
+1    0   -6.333269e-08
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 1.4748636381126725e-26}, 'U_J_caps': {'j0': 2.949699466962086e-28}, 'U_H': 2.64046152495039e-28, 'U_E': 1.50176717629652e-26, 'U_tot_ind': 1.5012682533621764e-26, 'U_tot_cap': 1.531264170966141e-26, 'U_norm': 1.531264170966141e-26, 'U_diff': 0.009891375723907832}, 1: {'U_J_inds': {'j0': 7.957497071916752e-29}, 'U_J_caps': {'j0': 4.011029330550452e-30}, 'U_H': 1.487381714331455e-26, 'U_E': 1.495342227587055e-26, 'U_tot_ind': 1.4953392114033717e-26, 'U_tot_cap': 1.49574333052011e-26, 'U_norm': 1.49574333052011e-26, 'U_diff': 0.00013510797882510274}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        51315   
+1                       layer_3_datatype_0_plane       906008   
+2                                     vacuum_box       512259   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          175   
+4  second_cpw_qubit_cavity_cap_coupler_shortline         1825   
+5          trace_qubit_cavity_left_cpw_shortline        27274   
+6                        cross_qubit_cavity_xmon         6620   
+7        readout_connector_arm_qubit_cavity_xmon         3975   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000609           0.224564           0.022794   4.415970e-12   
+1           0.000145           0.741660           0.017055   1.589150e-13   
+2           0.000329           1.108870           0.025419   1.133890e-12   
+3           0.010468           0.045110           0.022673   1.811310e-09   
+4           0.001802           0.010467           0.004217   3.015580e-10   
+5           0.001445           0.011140           0.004406   1.164050e-10   
+6           0.000716           0.022175           0.006951   1.286400e-11   
+7           0.000423           0.012228           0.004854   3.242930e-12   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.214730e-05    9.546790e-08      5.377150e-07  
+1   1.856190e-02    2.164760e-06      7.858840e-05  
+2   6.824870e-02    8.413350e-06      3.120440e-04  
+3   1.503670e-07    4.571430e-08      3.456770e-08  
+4   8.775720e-09    2.611160e-09      1.296210e-09  
+5   2.470060e-08    2.487310e-09      2.061260e-09  
+6   9.479520e-08    6.435050e-09      8.264750e-09  
+7   3.580260e-08    2.697860e-09      3.095440e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       7896                NaN
+2                      10199          10.266000
+3                      13076           4.179500
+4                      16738           2.550100
+5                      21406           2.145200
+6                      27387           1.063100
+7                      35080           0.637660
+8                      44869           0.315000
+9                      57422           0.872870
+10                     73456           0.357610
+11                     93852           0.710550
+12                    120069           1.059700
+13                    153686           0.838640
+14                    196920           0.507830
+15                    252524           0.463180
+16                    323972           0.307390
+17                    415621           0.166950
+18                    532978           0.161110
+19                    683669           0.146370
+20                    876733           0.109690
+21                   1105569           0.084085
+22                   1418267           0.064615, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7um,False,50um,3.46mm,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,4914.360342014637,205.36940463498686,8190.441154793687,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_32_rect_jj_
+rect         JJ_rect_Lj_32_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.963401
+1  0.005133, 'Pm_cap':          j0
+0  0.019243
+1  0.000263, 'Sm':    s_j0
+0     1
+1     1, 'Om':                  0         1
+freq_GHz  5.110509  8.191987, 'sols':             U_H           U_E
+0  6.762922e-28  3.894738e-26
+1  4.468874e-26  4.491927e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    5.110509
+1    8.191987
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    1.987420e-09
+dtype: float64
+1    0    1.543136e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0    6.181276e-07
+dtype: float64
+1    0    7.693390e-08
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 1.9129062939466576e-26}, 'U_J_caps': {'j0': 3.820817085263505e-28}, 'U_H': 3.38146111000742e-28, 'U_E': 1.94736924592932e-26, 'U_tot_ind': 1.946720905046732e-26, 'U_tot_cap': 1.9855774167819553e-26, 'U_norm': 1.9855774167819553e-26, 'U_diff': 0.009881374340173004}, 1: {'U_J_inds': {'j0': 1.1532482451704718e-28}, 'U_J_caps': {'j0': 5.918825250355817e-30}, 'U_H': 2.234436826000695e-26, 'U_E': 2.24596371258194e-26, 'U_tot_ind': 2.2459693084523995e-26, 'U_tot_cap': 2.2465555951069755e-26, 'U_norm': 2.2465555951069755e-26, 'U_diff': 0.00013050270553013424}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        43732   
+1                       layer_3_datatype_0_plane       709554   
+2                                     vacuum_box       446422   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          162   
+4  second_cpw_qubit_cavity_cap_coupler_shortline         1397   
+5          trace_qubit_cavity_left_cpw_shortline        21028   
+6                        cross_qubit_cavity_xmon         4254   
+7        readout_connector_arm_qubit_cavity_xmon         3194   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000685           0.226693           0.024843   1.457910e-11   
+1           0.000240           0.743879           0.018899   5.153710e-13   
+2           0.000271           1.107010           0.026739   3.646670e-13   
+3           0.010817           0.062925           0.024864   8.568520e-09   
+4           0.002439           0.008048           0.004763   4.305840e-10   
+5           0.001546           0.011675           0.004961   1.205810e-10   
+6           0.000642           0.031684           0.009296   9.703150e-12   
+7           0.000647           0.012215           0.005256   1.080200e-11   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.241350e-05    1.116740e-07      6.019600e-07  
+1   1.744830e-02    2.755210e-06      9.002870e-05  
+2   5.523860e-02    9.622980e-06      3.431930e-04  
+3   2.097500e-07    4.938270e-08      4.060760e-08  
+4   1.136550e-08    3.411140e-09      1.687680e-09  
+5   2.466710e-08    3.189890e-09      2.615490e-09  
+6   1.559800e-07    1.001410e-08      1.465250e-08  
+7   3.333330e-08    3.357550e-09      3.750900e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       8038                NaN
+2                      10361          16.035000
+3                      13305           5.302700
+4                      17016           5.044300
+5                      21789           3.897100
+6                      27957           1.569200
+7                      35795           0.921400
+8                      45837           0.828310
+9                      58666           0.722360
+10                     75105           0.545780
+11                     96115           0.433170
+12                    123001           0.345520
+13                    157654           0.529610
+14                    202035           0.283280
+15                    259123           0.207070
+16                    332483           0.176620
+17                    426665           0.152930
+18                    547500           0.117140
+19                    702268           0.110010
+20                    900784           0.089487
+21                   1155976           0.078071, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7.9um,False,50um,3900um,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,4913.1490088615565,204.50070409824943,7420.272844665733,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_35_rect_jj_
+rect         JJ_rect_Lj_35_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.960669
+1  0.007865, 'Pm_cap':          j0
+0  0.019175
+1  0.000331, 'Sm':    s_j0
+0     1
+1    -1, 'Om':                  0         1
+freq_GHz  5.108752  7.422375, 'sols':             U_H           U_E
+0  6.598828e-28  3.263643e-26
+1  5.704459e-26  5.749711e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    5.108752
+1    7.422375
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    1.816645e-09
+dtype: float64
+1    0   -2.161081e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0    5.648190e-07
+dtype: float64
+1    0   -9.761987e-08
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 1.598287188500351e-26}, 'U_J_caps': {'j0': 3.1902051634082705e-28}, 'U_H': 3.29941382580768e-28, 'U_E': 1.631821624383815e-26, 'U_tot_ind': 1.631281326758428e-26, 'U_tot_cap': 1.6637236760178977e-26, 'U_norm': 1.6637236760178977e-26, 'U_diff': 0.009845918058435167}, 1: {'U_J_inds': {'j0': 2.261812027384859e-28}, 'U_J_caps': {'j0': 9.52963981441138e-30}, 'U_H': 2.85222958852504e-26, 'U_E': 2.874855544494455e-26, 'U_tot_ind': 2.8748477087988886e-26, 'U_tot_cap': 2.875808508475896e-26, 'U_norm': 2.875808508475896e-26, 'U_diff': 0.0001670765284353213}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        44577   
+1                       layer_3_datatype_0_plane       720442   
+2                                     vacuum_box       451381   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          138   
+4  second_cpw_qubit_cavity_cap_coupler_shortline         1174   
+5          trace_qubit_cavity_left_cpw_shortline        19831   
+6                        cross_qubit_cavity_xmon         4981   
+7        readout_connector_arm_qubit_cavity_xmon         2742   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000645           0.217287           0.024862   8.261240e-12   
+1           0.000226           0.737076           0.019249   5.851270e-13   
+2           0.000231           1.110450           0.026962   3.194080e-13   
+3           0.010655           0.042736           0.024119   1.504190e-08   
+4           0.002578           0.010562           0.005299   5.955440e-10   
+5           0.001788           0.011984           0.005374   1.415470e-10   
+6           0.000678           0.023332           0.008324   1.245740e-11   
+7           0.000629           0.014307           0.005644   7.503390e-12   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.140410e-05    1.133150e-07      6.082510e-07  
+1   1.359720e-02    2.810350e-06      9.072670e-05  
+2   4.211410e-02    9.856710e-06      3.589570e-04  
+3   1.691750e-07    5.797100e-08      3.686710e-08  
+4   2.085840e-08    4.059090e-09      2.267840e-09  
+5   2.818760e-08    3.805010e-09      3.120940e-09  
+6   1.206370e-07    8.552500e-09      1.175250e-08  
+7   3.333330e-08    3.911010e-09      4.273020e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       8202                NaN
+2                      10529           7.179600
+3                      13486           4.180800
+4                      17288           1.978800
+5                      22178           1.469500
+6                      28362           0.982310
+7                      36299           0.386610
+8                      46489           0.576910
+9                      59524           0.733870
+10                     76219           0.368630
+11                     97450           0.405620
+12                    124643           0.363020
+13                    159587           0.427850
+14                    204529           0.358050
+15                    262286           0.232180
+16                    336351           0.167330
+17                    431750           0.156990
+18                    554111           0.121740
+19                    711153           0.120300
+20                    912392           0.091118
+21                   1171823           0.081187, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7.9um,False,50um,8150um,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,3905.3577577856977,0.13692636620903015,4962.249488139141,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_38_rect_jj_
+rect         JJ_rect_Lj_38_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.022334
+1  0.945223, 'Pm_cap':          j0
+0  0.000261
+1  0.019213, 'Sm':    s_j0
+0    -1
+1     1, 'Om':                  0         1
+freq_GHz  3.909393  5.155457, 'sols':             U_H           U_E
+0  1.246889e-25  1.275390e-25
+1  5.809907e-28  1.616835e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    3.909393
+1    5.155457
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0   -5.423618e-10
+dtype: float64
+1    0    1.268354e-09
+dtype: float64
+dtype: object, 'V_peak': 0    0   -1.290395e-07
+dtype: float64
+1    0    3.979533e-07
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 1.4245988926193208e-27}, 'U_J_caps': {'j0': 1.665119343953317e-29}, 'U_H': 6.2344430869693e-26, 'U_E': 6.37695226946825e-26, 'U_tot_ind': 6.376902976231232e-26, 'U_tot_cap': 6.378617388812204e-26, 'U_norm': 6.378617388812204e-26, 'U_diff': 0.00013440553830088324}, 1: {'U_J_inds': {'j0': 7.791043665690645e-27}, 'U_J_caps': {'j0': 1.583667924784697e-28}, 'U_H': 2.904953738839445e-28, 'U_E': 8.08417725676065e-27, 'U_tot_ind': 8.08153903957459e-27, 'U_tot_cap': 8.24254404923912e-27, 'U_norm': 8.24254404923912e-27, 'U_diff': 0.009863035417582561}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        49279   
+1                       layer_3_datatype_0_plane       706783   
+2                                     vacuum_box       471863   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline           80   
+4  second_cpw_qubit_cavity_cap_coupler_shortline          357   
+5          trace_qubit_cavity_left_cpw_shortline        15031   
+6                        cross_qubit_cavity_xmon         6607   
+7        readout_connector_arm_qubit_cavity_xmon         1284   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000806           0.259876           0.028423   2.471040e-11   
+1           0.000170           0.958490           0.023433   2.067070e-13   
+2           0.000195           1.298620           0.031726   2.311950e-13   
+3           0.011084           0.090818           0.041421   7.501480e-09   
+4           0.005553           0.011823           0.009504   3.611930e-09   
+5           0.002676           0.019277           0.008779   4.505150e-10   
+6           0.000313           0.021437           0.006953   1.113160e-12   
+7           0.000747           0.016083           0.007863   1.787870e-11   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.374390e-05    1.445780e-07      6.435610e-07  
+1   3.814850e-02    4.064280e-06      1.386450e-04  
+2   6.246510e-02    1.337740e-05      4.892110e-04  
+3   3.027280e-07    1.000000e-07      7.253340e-08  
+4   3.273860e-08    1.334840e-08      5.087630e-09  
+5   6.425590e-08    1.080970e-08      7.433780e-09  
+6   9.236260e-08    6.447710e-09      8.506630e-09  
+7   5.360920e-08    8.352020e-09      8.880390e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       8775                NaN
+2                      11217          29.321000
+3                      14305           3.332300
+4                      18226           4.775400
+5                      23275           1.744700
+6                      29749           1.695200
+7                      38038           1.237300
+8                      48692           0.855050
+9                      62350           0.507480
+10                     79722           0.338370
+11                    101969           0.417830
+12                    130486           0.334170
+13                    166978           0.280580
+14                    213861           0.279840
+15                    273967           0.209170
+16                    351220           0.166550
+17                    427469           0.110160
+18                    525712           0.095835
+19                    599644           0.100680
+20                    770586           0.118820
+21                    991190           0.094916
+22                   1178646           0.092379, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7.9um,False,50um,8025um,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,3964.2178815465973,0.1889930997724533,4967.227718037627,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_41_rect_jj_
+rect         JJ_rect_Lj_41_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.025351
+1  0.942363, 'Pm_cap':          j0
+0  0.000305
+1  0.019189, 'Sm':    s_j0
+0    -1
+1     1, 'Om':                  0         1
+freq_GHz  3.968907  5.159993, 'sols':             U_H           U_E
+0  6.711113e-26  6.885791e-26
+1  3.648131e-28  9.384263e-27, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    3.968907
+1    5.159993
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0   -4.245914e-10
+dtype: float64
+1    0    9.648153e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0   -1.025573e-07
+dtype: float64
+1    0    3.029825e-07
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 8.730858240173011e-28}, 'U_J_caps': {'j0': 1.0517997158154955e-29}, 'U_H': 3.355556721995635e-26, 'U_E': 3.44289547710776e-26, 'U_tot_ind': 3.442865304397365e-26, 'U_tot_cap': 3.4439472768235753e-26, 'U_norm': 3.4439472768235753e-26, 'U_diff': 0.0001571078657143219}, 1: {'U_J_inds': {'j0': 4.508196194221024e-27}, 'U_J_caps': {'j0': 9.179842372472848e-29}, 'U_H': 1.824065682939115e-28, 'U_E': 4.692131519969555e-27, 'U_tot_ind': 4.6906027625149355e-27, 'U_tot_cap': 4.7839299436942835e-27, 'U_norm': 4.7839299436942835e-27, 'U_diff': 0.009850320229322262}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        62341   
+1                       layer_3_datatype_0_plane      1009608   
+2                                     vacuum_box       666152   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          105   
+4  second_cpw_qubit_cavity_cap_coupler_shortline          592   
+5          trace_qubit_cavity_left_cpw_shortline        24212   
+6                        cross_qubit_cavity_xmon         8890   
+7        readout_connector_arm_qubit_cavity_xmon         1758   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000985           0.235767           0.024952   2.700600e-11   
+1           0.000164           0.900440           0.019938   2.174810e-13   
+2           0.000150           1.163120           0.027320   1.115420e-13   
+3           0.011415           0.070607           0.031881   1.586420e-08   
+4           0.002739           0.011529           0.007487   8.204740e-10   
+5           0.002312           0.015636           0.007007   3.102860e-10   
+6           0.000352           0.021753           0.006167   1.728990e-12   
+7           0.001116           0.014191           0.006917   2.716970e-11   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.418490e-05    1.128940e-07      5.534080e-07  
+1   2.739190e-02    2.810960e-06      9.996180e-05  
+2   6.230930e-02    9.361620e-06      3.482120e-04  
+3   2.353560e-07    7.619050e-08      5.592300e-08  
+4   2.368450e-08    8.049610e-09      4.265720e-09  
+5   5.212020e-08    6.607480e-09      5.227270e-09  
+6   9.450240e-08    4.791900e-09      6.625470e-09  
+7   4.335660e-08    6.100110e-09      6.697510e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       9235                NaN
+2                      11855          22.238000
+3                      15183           6.672900
+4                      19353           3.875900
+5                      24763           2.930000
+6                      31624           1.938100
+7                      40395           1.382100
+8                      51670           0.849830
+9                      66106           0.473850
+10                     84650           0.614920
+11                    108486           0.423670
+12                    138844           0.286490
+13                    177631           0.181990
+14                    227157           0.112110
+15                    290990           0.214620
+16                    373004           0.153600
+17                    478519           0.132070
+18                    614481           0.154940
+19                    788637           0.107780
+20                   1013522           0.109560
+21                   1302419           0.091873
+22                   1675760           0.066707, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7.9um,False,50um,3700um,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,4913.428562442547,204.9175341341133,7749.8004277938735,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_44_rect_jj_
+rect         JJ_rect_Lj_44_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.962108
+1  0.006416, 'Pm_cap':          j0
+0  0.019208
+1  0.000295, 'Sm':    s_j0
+0     1
+1     1, 'Om':                  0         1
+freq_GHz  5.109286  7.751609, 'sols':             U_H           U_E
+0  5.588902e-28  2.986794e-26
+1  6.362601e-26  6.403714e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    5.109286
+1    7.751609
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    1.739218e-09
+dtype: float64
+1    0    2.059868e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0    5.408022e-07
+dtype: float64
+1    0    9.717525e-08
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 1.4649483336483632e-26}, 'U_J_caps': {'j0': 2.924670528348267e-28}, 'U_H': 2.794451017754285e-28, 'U_E': 1.49339723025382e-26, 'U_tot_ind': 1.492892843825906e-26, 'U_tot_cap': 1.5226439355373026e-26, 'U_norm': 1.5226439355373026e-26, 'U_diff': 0.009865935615508928}, 1: {'U_J_inds': {'j0': 2.054912855358439e-28}, 'U_J_caps': {'j0': 9.443029822441222e-30}, 'U_H': 3.181300446515305e-26, 'U_E': 3.2018569630151e-26, 'U_tot_ind': 3.2018495750688895e-26, 'U_tot_cap': 3.202801265997344e-26, 'U_norm': 3.202801265997344e-26, 'U_diff': 0.00014859372541472848}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        41113   
+1                       layer_3_datatype_0_plane       653147   
+2                                     vacuum_box       411626   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          135   
+4  second_cpw_qubit_cavity_cap_coupler_shortline         1129   
+5          trace_qubit_cavity_left_cpw_shortline        17719   
+6                        cross_qubit_cavity_xmon         4346   
+7        readout_connector_arm_qubit_cavity_xmon         2648   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000734           0.259621           0.025674   1.548090e-11   
+1           0.000252           0.757299           0.019804   1.011320e-12   
+2           0.000263           1.107000           0.028193   9.666680e-13   
+3           0.011052           0.058065           0.026296   1.031720e-08   
+4           0.002595           0.010740           0.005433   7.066340e-10   
+5           0.002198           0.012392           0.005553   1.878680e-10   
+6           0.000853           0.031246           0.008957   2.552730e-11   
+7           0.000750           0.013070           0.005831   1.358800e-11   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.410450e-05    1.210150e-07      6.393290e-07  
+1   2.538870e-02    3.051480e-06      1.038250e-04  
+2   5.637850e-02    1.063980e-05      3.850580e-04  
+3   1.935510e-07    5.925930e-08      4.324270e-08  
+4   1.680220e-08    4.220870e-09      2.024510e-09  
+5   2.863750e-08    4.043550e-09      3.305760e-09  
+6   1.567710e-07    9.802120e-09      1.325990e-08  
+7   4.356590e-08    4.049850e-09      4.709280e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       7503                NaN
+2                       9619          14.022000
+3                      12343           6.618300
+4                      15787           3.059600
+5                      20156           1.374400
+6                      25774           1.191100
+7                      32980           0.662370
+8                      42199           0.433870
+9                      54070           0.651720
+10                     69237           0.429100
+11                     88572           0.437900
+12                    113280           0.352730
+13                    145082           0.316480
+14                    185846           0.304050
+15                    238237           0.227990
+16                    305655           0.274570
+17                    392271           0.127320
+18                    503540           0.109360
+19                    646371           0.103230
+20                    829448           0.082929
+21                   1064773           0.074801, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7.9um,False,50um,3550um,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,4908.446116847244,204.71191528358457,8010.606410183801,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_47_rect_jj_
+rect         JJ_rect_Lj_47_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.963026
+1  0.005575, 'Pm_cap':          j0
+0  0.019187
+1  0.000274, 'Sm':    s_j0
+0     1
+1    -1, 'Om':                  0        1
+freq_GHz  5.104031  8.01224, 'sols':             U_H           U_E
+0  1.171514e-27  6.579966e-26
+1  6.429134e-26  6.465204e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    5.104031
+1    8.012240
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    2.582649e-09
+dtype: float64
+1    0   -1.929348e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0    8.022375e-07
+dtype: float64
+1    0   -9.407818e-08
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 3.230317230631198e-26}, 'U_J_caps': {'j0': 6.435849815819479e-28}, 'U_H': 5.8575713307778e-28, 'U_E': 3.289983154801215e-26, 'U_tot_ind': 3.288892943938976e-26, 'U_tot_cap': 3.3543416529594103e-26, 'U_norm': 3.3543416529594103e-26, 'U_diff': 0.00985193403391041}, 1: {'U_J_inds': {'j0': 1.8027506594649685e-28}, 'U_J_caps': {'j0': 8.850703853975481e-30}, 'U_H': 3.214566939363495e-26, 'U_E': 3.23260197350517e-26, 'U_tot_ind': 3.232594445958145e-26, 'U_tot_cap': 3.233487043890568e-26, 'U_norm': 3.233487043890568e-26, 'U_diff': 0.00013804309980078975}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        31228   
+1                       layer_3_datatype_0_plane       443311   
+2                                     vacuum_box       272254   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline           99   
+4  second_cpw_qubit_cavity_cap_coupler_shortline          609   
+5          trace_qubit_cavity_left_cpw_shortline        10693   
+6                        cross_qubit_cavity_xmon         2572   
+7        readout_connector_arm_qubit_cavity_xmon         1725   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.001573           0.224809           0.029411   1.429800e-10   
+1           0.000406           0.746761           0.023464   2.577050e-12   
+2           0.000416           1.107000           0.034174   2.507620e-12   
+3           0.010939           0.065860           0.034522   2.037210e-08   
+4           0.003407           0.011255           0.007573   1.552680e-09   
+5           0.002528           0.013150           0.006989   4.574290e-10   
+6           0.001259           0.042426           0.012660   8.066410e-11   
+7           0.001178           0.015270           0.007102   4.174880e-11   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   9.638810e-06    1.574970e-07      7.278310e-07  
+1   1.831660e-02    4.442350e-06      1.260920e-04  
+2   5.542390e-02    1.589510e-05      4.878610e-04  
+3   2.195320e-07    8.080810e-08      6.074120e-08  
+4   2.769220e-08    7.824900e-09      4.515630e-09  
+5   3.501550e-08    6.433230e-09      4.924700e-09  
+6   3.000000e-07    1.656300e-08      2.413330e-08  
+7   5.090140e-08    6.216810e-09      7.047460e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       8219                NaN
+2                      10581           9.085300
+3                      13554           3.836400
+4                      17323           1.537700
+5                      22190           1.381200
+6                      28447           0.963120
+7                      36441           1.109700
+8                      46670           0.647600
+9                      59691           0.639100
+10                     76453           0.693900
+11                     97888           0.533150
+12                    125327           0.484490
+13                    160478           0.399000
+14                    205687           0.288390
+15                    263764           0.200290
+16                    338441           0.124730
+17                    434570           0.114360
+18                    557576           0.099881
+19                    715565           0.091158, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7.9um,False,50um,8000um,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,3974.749782715269,0.20043357880306242,4968.041651145408,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_50_rect_jj_
+rect         JJ_rect_Lj_50_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.025942
+1  0.941802, 'Pm_cap':          j0
+0  0.000314
+1  0.019183, 'Sm':    s_j0
+0     1
+1     1, 'Om':                  0         1
+freq_GHz  3.979569  5.160706, 'sols':             U_H           U_E
+0  7.777473e-26  7.984749e-26
+1  3.717355e-28  9.422749e-27, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    3.979569
+1    5.160706
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    4.625182e-10
+dtype: float64
+1    0    9.665009e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0    1.120184e-07
+dtype: float64
+1    0    3.035539e-07
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 1.0360295174193161e-27}, 'U_J_caps': {'j0': 1.2548112657623099e-29}, 'U_H': 3.888736468204825e-26, 'U_E': 3.992374623380805e-26, 'U_tot_ind': 3.9923394199467565e-26, 'U_tot_cap': 3.9936294346465674e-26, 'U_norm': 3.9936294346465674e-26, 'U_diff': 0.00016153515287865234}, 1: {'U_J_inds': {'j0': 4.523962650408618e-27}, 'U_J_caps': {'j0': 9.214494388358454e-29}, 'U_H': 1.858677355043765e-28, 'U_E': 4.711374387021945e-27, 'U_tot_ind': 4.709830385912995e-27, 'U_tot_cap': 4.803519330905529e-27, 'U_norm': 4.803519330905529e-27, 'U_diff': 0.009848155253548926}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        60067   
+1                       layer_3_datatype_0_plane       962020   
+2                                     vacuum_box       651291   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          103   
+4  second_cpw_qubit_cavity_cap_coupler_shortline          555   
+5          trace_qubit_cavity_left_cpw_shortline        22376   
+6                        cross_qubit_cavity_xmon         9276   
+7        readout_connector_arm_qubit_cavity_xmon         1719   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000820           0.247961           0.025648   2.092220e-11   
+1           0.000130           0.852469           0.020476   1.448240e-13   
+2           0.000161           1.120730           0.027213   9.744560e-14   
+3           0.008802           0.063700           0.034537   1.122880e-08   
+4           0.003148           0.011085           0.007831   1.195890e-09   
+5           0.002334           0.015530           0.007286   3.648040e-10   
+6           0.000390           0.043969           0.009280   2.117750e-12   
+7           0.000702           0.014459           0.007142   1.269740e-11   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.413540e-05    1.168790e-07      6.076640e-07  
+1   3.499440e-02    2.942820e-06      1.047440e-04  
+2   5.692980e-02    9.551890e-06      3.621540e-04  
+3   2.123320e-07    7.766990e-08      5.731450e-08  
+4   2.551220e-08    8.586250e-09      4.504330e-09  
+5   4.967700e-08    7.127290e-09      5.579200e-09  
+6   8.781820e-08    4.592500e-09      6.480860e-09  
+7   4.819570e-08    6.238510e-09      7.236680e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       9241                NaN
+2                      11826          20.980000
+3                      15104           5.401300
+4                      19267           3.281100
+5                      24656           1.738100
+6                      31493           2.219900
+7                      40181           1.344000
+8                      51417           0.722280
+9                      65749           0.489600
+10                     84059           0.381080
+11                    107683           0.385770
+12                    137920           0.361740
+13                    176612           0.252790
+14                    226068           0.202930
+15                    279921           0.175930
+16                    359090           0.149110
+17                    460626           0.144900
+18                    591243           0.142620
+19                    759455           0.112950
+20                    976188           0.102060
+21                   1254776           0.093495
+22                   1613311           0.070665, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7.9um,False,50um,3.58mm,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,4911.087417390354,204.9039831874008,7959.884040761396,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_53_rect_jj_
+rect         JJ_rect_Lj_53_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.962836
+1  0.005727, 'Pm_cap':          j0
+0  0.019204
+1  0.000278, 'Sm':    s_j0
+0     1
+1    -1, 'Om':                  0         1
+freq_GHz  5.106865  7.961551, 'sols':             U_H           U_E
+0  9.874911e-28  5.493326e-26
+1  6.824409e-26  6.863742e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    5.106865
+1    7.961551
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    2.359567e-09
+dtype: float64
+1    0   -2.014731e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0    7.333497e-07
+dtype: float64
+1    0   -9.762007e-08
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 2.696368618452324e-26}, 'U_J_caps': {'j0': 5.378017905352061e-28}, 'U_H': 4.937455498199305e-28, 'U_E': 2.74666299297087e-26, 'U_tot_ind': 2.745743173434317e-26, 'U_tot_cap': 2.8004431720243905e-26, 'U_norm': 2.8004431720243905e-26, 'U_diff': 0.009862632660163398}, 1: {'U_J_inds': {'j0': 1.9658425825258251e-28}, 'U_J_caps': {'j0': 9.529678526864633e-30}, 'U_H': 3.412204367856565e-26, 'U_E': 3.431871211180415e-26, 'U_tot_ind': 3.431862793681823e-26, 'U_tot_cap': 3.4328241790331013e-26, 'U_norm': 3.4328241790331013e-26, 'U_diff': 0.00014004795194586325}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        36102   
+1                       layer_3_datatype_0_plane       541185   
+2                                     vacuum_box       336117   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          117   
+4  second_cpw_qubit_cavity_cap_coupler_shortline          925   
+5          trace_qubit_cavity_left_cpw_shortline        14393   
+6                        cross_qubit_cavity_xmon         3214   
+7        readout_connector_arm_qubit_cavity_xmon         2245   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000678           0.211238           0.027231   1.444480e-11   
+1           0.000351           0.708752           0.020955   2.368580e-12   
+2           0.000357           1.107000           0.031219   1.690590e-12   
+3           0.010936           0.068480           0.029334   1.630850e-08   
+4           0.002922           0.010545           0.005943   7.760860e-10   
+5           0.002353           0.012259           0.006045   3.592090e-10   
+6           0.000698           0.032849           0.010522   1.897290e-11   
+7           0.000786           0.015268           0.006268   2.010900e-11   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   9.196470e-06    1.365490e-07      6.678120e-07  
+1   1.742620e-02    3.647710e-06      1.091400e-04  
+2   4.332750e-02    1.290600e-05      4.054570e-04  
+3   2.282680e-07    6.837610e-08      4.982940e-08  
+4   2.244310e-08    5.151750e-09      2.753640e-09  
+5   2.985310e-08    4.819140e-09      3.824200e-09  
+6   2.342630e-07    1.325450e-08      1.848390e-08  
+7   5.089260e-08    4.776840e-09      5.355640e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       7873                NaN
+2                      10120          15.214000
+3                      12959           5.062300
+4                      16632           2.412000
+5                      21276           1.399000
+6                      27265           1.434100
+7                      34927           0.842100
+8                      44730           0.881570
+9                      57233           0.479450
+10                     73258           0.606440
+11                     93700           0.402030
+12                    119978           0.525890
+13                    153501           0.358490
+14                    196682           0.309870
+15                    252143           0.291500
+16                    323512           0.159730
+17                    414986           0.118460
+18                    532975           0.129550
+19                    683925           0.079601
+20                    877302           0.070872, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7.9um,False,50um,3.5mm,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,4914.668056252432,205.33958681171416,8112.990239782836,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_56_rect_jj_
+rect         JJ_rect_Lj_56_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.963201
+1  0.005325, 'Pm_cap':          j0
+0  0.019241
+1  0.000268, 'Sm':    s_j0
+0     1
+1     1, 'Om':                  0         1
+freq_GHz  5.110809  8.114576, 'sols':             U_H           U_E
+0  4.955510e-28  2.820433e-26
+1  3.972356e-26  3.993631e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    5.110809
+1    8.114576
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    1.691075e-09
+dtype: float64
+1    0    1.481884e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0    5.259894e-07
+dtype: float64
+1    0    7.318203e-08
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 1.3849702193370554e-26}, 'U_J_caps': {'j0': 2.766648524920387e-28}, 'U_H': 2.477754949629915e-28, 'U_E': 1.41021641017931e-26, 'U_tot_ind': 1.4097477688333545e-26, 'U_tot_cap': 1.437882895428514e-26, 'U_norm': 1.437882895428514e-26, 'U_diff': 0.009880188097515204}, 1: {'U_J_inds': {'j0': 1.0635134406515006e-28}, 'U_J_caps': {'j0': 5.35560881605859e-30}, 'U_H': 1.98617813875466e-26, 'U_E': 1.99681532118987e-26, 'U_tot_ind': 1.996813273161175e-26, 'U_tot_cap': 1.997350882071476e-26, 'U_norm': 1.997350882071476e-26, 'U_diff': 0.0001345986017116149}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        41736   
+1                       layer_3_datatype_0_plane       675127   
+2                                     vacuum_box       422996   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          123   
+4  second_cpw_qubit_cavity_cap_coupler_shortline         1167   
+5          trace_qubit_cavity_left_cpw_shortline        18803   
+6                        cross_qubit_cavity_xmon         4487   
+7        readout_connector_arm_qubit_cavity_xmon         2887   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000743           0.221788           0.025087   1.723210e-11   
+1           0.000239           0.643739           0.019428   6.998980e-13   
+2           0.000270           1.275640           0.027632   7.344410e-13   
+3           0.010744           0.061573           0.028703   1.293940e-08   
+4           0.002661           0.010781           0.005277   6.748320e-10   
+5           0.002256           0.011870           0.005225   2.183120e-10   
+6           0.000762           0.033541           0.008934   2.008590e-11   
+7           0.000706           0.012910           0.005573   6.986300e-12   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.189100e-05    1.173880e-07      6.187560e-07  
+1   1.529860e-02    2.905280e-06      8.792470e-05  
+2   4.592160e-02    1.018950e-05      3.517230e-04  
+3   2.052450e-07    6.504070e-08      5.146180e-08  
+4   1.843180e-08    4.083430e-09      2.123560e-09  
+5   2.863750e-08    3.607830e-09      2.903940e-09  
+6   1.500000e-07    9.494090e-09      1.289560e-08  
+7   3.828380e-08    3.714580e-09      4.141310e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       7644                NaN
+2                       9852          19.409000
+3                      12649          10.688000
+4                      16188           4.824100
+5                      20727           3.050600
+6                      26570           1.768400
+7                      34039           0.994760
+8                      43556           0.793000
+9                      55783           0.360120
+10                     71396           0.316670
+11                     91306           0.538860
+12                    116794           0.459660
+13                    149524           0.414690
+14                    191674           0.370490
+15                    245801           0.201510
+16                    315288           0.199430
+17                    404856           0.145100
+18                    519673           0.121090
+19                    666736           0.120730
+20                    855284           0.084476
+21                   1098123           0.075004, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,200um,10um,5.1um,10um,5.1um,7.9um,False,50um,3.46mm,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,4918.1105954236045,205.70136616571426,8194.428367348542,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_59_rect_jj_
+rect         JJ_rect_Lj_59_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.963347
+1  0.005137, 'Pm_cap':          j0
+0  0.019272
+1  0.000264, 'Sm':    s_j0
+0     1
+1    -1, 'Om':                  0         1
+freq_GHz  5.114568  8.195977, 'sols':             U_H           U_E
+0  6.299978e-28  3.622749e-26
+1  2.381725e-26  2.394025e-26, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    5.114568
+1    8.195977
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0    1.916743e-09
+dtype: float64
+1    0   -1.126983e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0    5.966193e-07
+dtype: float64
+1    0   -5.621373e-08
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 1.7792721573971035e-26}, 'U_J_caps': {'j0': 3.559545394228626e-28}, 'U_H': 3.149988767966405e-28, 'U_E': 1.811374459440105e-26, 'U_tot_ind': 1.8107720450767675e-26, 'U_tot_cap': 1.8469699133823913e-26, 'U_norm': 1.8469699133823913e-26, 'U_diff': 0.009896233445858575}, 1: {'U_J_inds': {'j0': 6.151048623640026e-29}, 'U_J_caps': {'j0': 3.159983780725812e-30}, 'U_H': 1.190862519178295e-26, 'U_E': 1.197012636539325e-26, 'U_tot_ind': 1.197013567801935e-26, 'U_tot_cap': 1.1973286349173976e-26, 'U_norm': 1.1973286349173976e-26, 'U_diff': 0.00013158817277864114}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        52748   
+1                       layer_3_datatype_0_plane       947982   
+2                                     vacuum_box       560085   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          157   
+4  second_cpw_qubit_cavity_cap_coupler_shortline         1865   
+5          trace_qubit_cavity_left_cpw_shortline        28666   
+6                        cross_qubit_cavity_xmon         7093   
+7        readout_connector_arm_qubit_cavity_xmon         4084   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000645           0.229758           0.022685   1.092010e-11   
+1           0.000166           0.737590           0.016964   2.419760e-13   
+2           0.000238           1.107000           0.024449   5.027940e-13   
+3           0.010642           0.063549           0.023392   1.194600e-08   
+4           0.001975           0.007013           0.004045   2.905810e-10   
+5           0.001277           0.011194           0.004267   7.992260e-11   
+6           0.000683           0.020396           0.006814   1.140680e-11   
+7           0.000514           0.011594           0.004811   3.442970e-12   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.186500e-05    9.259350e-08      5.356120e-07  
+1   9.920110e-03    2.062390e-06      6.614650e-05  
+2   3.598250e-02    7.670660e-06      2.754820e-04  
+3   2.118310e-07    5.095540e-08      4.206040e-08  
+4   9.214730e-09    2.555160e-09      1.395840e-09  
+5   2.104770e-08    2.339920e-09      1.931930e-09  
+6   9.666310e-08    6.005920e-09      7.772980e-09  
+7   3.333330e-08    2.625860e-09      3.063970e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       8185                NaN
+2                      10562          20.381000
+3                      13542           6.824300
+4                      17331           3.080600
+5                      22209           2.562300
+6                      28481           1.402500
+7                      36479           1.060500
+8                      46714           0.859150
+9                      59812           0.561380
+10                     76490           0.280170
+11                     97816           0.558030
+12                    125184           0.655720
+13                    160349           0.431820
+14                    205472           0.488040
+15                    263480           0.345440
+16                    337944           0.292720
+17                    433701           0.190750
+18                    556497           0.139800
+19                    713610           0.112460
+20                    915530           0.102320
+21                   1174585           0.075991
+22                   1508067           0.062694, 'convergence_f_pass': None}}}"
+0.0um,0.0um,0.0,main,1,capacitive,180,225um,10um,5.1um,10um,5.1um,7um,False,50um,3900um,49.9um,100um,0um,49.9um,clt,second_end,qubit,readout,70um,49.9um,10um,100um,-150um,5.1um,0,0,185um,4um,5.1um,10um,40um,10um,50um,180,1500um,30um,185um,29um,9.686e-09,,4906.103071431217,203.81657404982184,7368.64694375375,-1,-1,half,"{'project_info': {'pinfo': design_name     test_qubit_cavity_saruman_design
+project_name      test_qubit_cavity_saruman_proj
+project_path            D:/lfl/Documents/Ansoft/
+setup_name                         TransmonSetup
+dtype: object, 'dissip': dielectrics_bulk                             None
+dielectric_surfaces    [layer_3_datatype_0_plane]
+resistive_surfaces                           None
+seams                                        None
+dtype: object, 'options': Series([], dtype: float64), 'junctions':                                 j0
+Cj_variable                   Cj_0
+Lj_variable                   Lj_0
+length                      0.0001
+line             JJ_Lj_62_rect_jj_
+rect         JJ_rect_Lj_62_rect_jj, 'ports': Empty DataFrame
+Columns: []
+Index: []}, 'results': {'0': {'Pm':          j0
+0  0.960539
+1  0.008073, 'Pm_cap':          j0
+0  0.019115
+1  0.000335, 'Sm':    s_j0
+0    -1
+1     1, 'Om':                  0         1
+freq_GHz  5.101087  7.370784, 'sols':             U_H           U_E
+0  1.766600e-27  8.656404e-26
+1  1.470987e-25  1.482964e-25, 'Qm_coupling': Empty DataFrame
+Columns: []
+Index: [0, 1], 'Ljs': j0    9.686000e-09
+dtype: float64, 'Cjs': j0    2.000000e-15
+dtype: float64, 'Qs': 0    inf
+1    inf
+dtype: float64, 'freqs_hfss_GHz': 0    5.101087
+1    7.370784
+dtype: float64, 'hfss_variables': _Cj_0                     0fF
+_Lj_0    9.6859999999999999nH
+dtype: object, 'modes': range(0, 2), 'I_peak': 0    0   -2.958319e-09
+dtype: float64
+1    0    3.516297e-10
+dtype: float64
+dtype: object, 'V_peak': 0    0   -9.184004e-07
+dtype: float64
+1    0    1.577334e-07
+dtype: float64
+dtype: object, 'ansys_energies': {0: {'U_J_inds': {'j0': 4.2384252728760246e-26}, 'U_J_caps': {'j0': 8.434592733497783e-28}, 'U_H': 8.8329995176934e-28, 'U_E': 4.32820185152507e-26, 'U_tot_ind': 4.326755268052959e-26, 'U_tot_cap': 4.4125477788600476e-26, 'U_norm': 4.4125477788600476e-26, 'U_diff': 0.009816859576393036}, 1: {'U_J_inds': {'j0': 5.988053701353183e-28}, 'U_J_caps': {'j0': 2.4879818743303989e-29}, 'U_H': 7.3549352042609e-26, 'U_E': 7.41482054284475e-26, 'U_tot_ind': 7.414815741274432e-26, 'U_tot_cap': 7.41730852471908e-26, 'U_norm': 7.41730852471908e-26, 'U_diff': 0.0001680665156213733}}, 'mesh':                                        Unnamed: 0  Num Tets    \
+0                       layer_1_datatype_0_plane        32513   
+1                       layer_3_datatype_0_plane       458462   
+2                                     vacuum_box       281243   
+3   prime_cpw_qubit_cavity_cap_coupler_shortline          135   
+4  second_cpw_qubit_cavity_cap_coupler_shortline          662   
+5          trace_qubit_cavity_left_cpw_shortline        11084   
+6                        cross_qubit_cavity_xmon         2512   
+7        readout_connector_arm_qubit_cavity_xmon         1708   
+
+   Min edge length    Max edge length    RMS edge length    Min tet vol    \
+0           0.000945           0.228294           0.029354   3.479900e-11   
+1           0.000416           0.750289           0.023312   4.540720e-12   
+2           0.000438           1.257850           0.034073   3.094190e-12   
+3           0.008672           0.063652           0.029080   9.556760e-09   
+4           0.003414           0.011762           0.007555   1.376320e-09   
+5           0.002333           0.013150           0.007121   5.092180e-10   
+6           0.001327           0.034439           0.012161   7.245550e-11   
+7           0.001224           0.014460           0.006978   6.298910e-11   
+
+   Max tet vol    Mean tet vol    Std Devn (vol)    
+0   1.003210e-05    1.566090e-07      7.019170e-07  
+1   2.160530e-02    4.452030e-06      1.299590e-04  
+2   7.141840e-02    1.594760e-05      5.265550e-04  
+3   2.121740e-07    6.666670e-08      5.226390e-08  
+4   2.885350e-08    7.953730e-09      3.925910e-09  
+5   3.568490e-08    6.811590e-09      5.262110e-09  
+6   1.940630e-07    1.695860e-08      2.380500e-08  
+7   4.572990e-08    6.278690e-09      6.378130e-09  , 'convergence':              Solved Elements  Max Delta Freq. %
+Pass Number                                    
+1                       8480                NaN
+2                      10954           5.845500
+3                      14043           4.686500
+4                      17948           2.475700
+5                      22986           1.247800
+6                      29477           1.240000
+7                      37776           0.842040
+8                      48393           0.692000
+9                      61847           0.420690
+10                     79155           0.277910
+11                    101247           0.211380
+12                    129522           0.282810
+13                    165890           0.454330
+14                    212572           0.425810
+15                    272573           0.264110
+16                    349720           0.198070
+17                    449123           0.182110
+18                    576395           0.097601
+19                    739705           0.086099, 'convergence_f_pass': None}}}"
